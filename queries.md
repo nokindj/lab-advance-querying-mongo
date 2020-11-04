@@ -92,6 +92,6 @@ query: {"acquisition.acquired_month": {\$gte: 3}}
 sort: {name: 1, "acquisition.acquired_month": 1}
 limit: 10
 
-### 19. All the companies that have been founded between 2000 and 2010, but have not been acquired before 2011.
+### 19. All the companies that have been founded between 2000 and 2010, but have not been acquirecd d before 2011.
 
 query: {$and: [{founded_year: {$gte: 2000, $lte: 2010}}, {"acquisition.acquired_year":{$gt: 2011}}]}
